@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="display">
+            <input id="history" class="history" readonly>
+            <input id="result" class="result" readonly>
+        </div>
+        <div class="numpad">
+            <div class="left_numpad">
+                <button onclick="appendNumber(1)">1</button>
+                <button onclick="appendNumber(2)">2</button>
+                <button onclick="appendNumber(3)">3</button>
+                <button onclick="appendNumber(4)">4</button>
+                <button onclick="appendNumber(5)">5</button>
+                <button onclick="appendNumber(6)">6</button>
+                <button onclick="appendNumber(7)">7</button>
+                <button onclick="appendNumber(8)">8</button>
+                <button onclick="appendNumber(9)">9</button>
+                <button onclick="appendNumber(0)">0</button>
+                <button onclick="appendNumber('.')">.</button>
+                <button onclick="appendNumber(')')">)</button>
+                <button onclick="memoryClear()">MC</button>
+                <button onclick="memoryRecall()">MR</button>
+                <button onclick="appendNumber('(')">(</button>
+            </div>
+            <div class="right_numpad">
+                <button onclick="add()">+</button>
+                <button onclick="subtract()">-</button>
+                <button onclick="multiply()">*</button>
+                <button onclick="divide()">/</button>
+                <button onclick="total()">=</button>
+            </div>
+        </div>
+        <div class="bottom_numpad">
+            <button onclick="memoryStore()">MS</button>
+            <button onclick="reset()">Сброс</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
